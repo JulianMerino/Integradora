@@ -22,7 +22,11 @@ const routes: Routes = [
   {
     path: 'nav',
     loadChildren: () => import('./components/nav/nav.module').then( m => m.NavPageModule)
+  },  {
+    path: 'hola',
+    loadChildren: () => import('./pages/hola/hola.module').then( m => m.HolaPageModule)
   },
+
 ];
 
 @NgModule({
